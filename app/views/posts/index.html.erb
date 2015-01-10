@@ -1,0 +1,40 @@
+<div class="row">
+	<div class="form">
+		<div class="col-sm-4">
+
+		<p id="notice"><%= notice %></p>
+
+			<%= render 'form' %>
+		</div>
+	</div>
+
+	<div class="feed">
+		<div class="col-sm-8">
+			<h1>Recent posts</h1>
+			<% @feeds.each do |post| %>
+
+			<h2>
+     		 
+     		<small class="author">Submitted <%= time_ago_in_words(post.created_at) %> ago </small>
+    		</h2>
+
+			<div class="panel panel-default">
+				<div class="panel-heading">
+				<h4><%= link_to post.firm.name, post %></p></h4>
+				</div>
+				
+				<div class="panel-body">
+				<p><%= post.content %> </p>
+				</div>
+			</div>
+
+			
+				 
+			<% end %>
+				  
+			<br>
+
+			</div>
+		</div>
+	
+</div>
