@@ -2,7 +2,6 @@
 	<div class="form">
 		<div class="col-sm-4">
 
-		<p id="notice"><%= notice %></p>
 
 			<%= render 'form' %>
 		</div>
@@ -15,7 +14,8 @@
 
 			<h2>
      		 
-     		<small class="author">Submitted <%= time_ago_in_words(post.created_at) %> ago </small>
+     		<small class="author">Submitted <%= time_ago_in_words(post.created_at) %> ago by <%=post.user.name%> 
+     		</small>
     		</h2>
 
 			<div class="panel panel-default">
@@ -26,6 +26,8 @@
 				<div class="panel-body">
 				<p><%= post.content %> </p>
 				</div>
+
+				<%= link_to "Delete", post, method: :delete %>
 			</div>
 
 			
