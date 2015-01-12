@@ -18200,3 +18200,769 @@ Started GET "/assets/application-55b8fb2b77bc26562f09edc48bdb8091.js?body=1" for
   [1m[35mFirm Load (0.2ms)[0m  SELECT  "firms".* FROM "firms"  ORDER BY "firms"."id" DESC LIMIT 1
   [1m[36mFirm Load (0.2ms)[0m  [1mSELECT  "firms".* FROM "firms"  ORDER BY "firms"."id" DESC LIMIT 1[0m
   [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts" WHERE "posts"."firm_id" = ?  [["firm_id", 2]]
+
+
+Started GET "/" for ::1 at 2015-01-12 00:39:00 +0000
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by PostsController#index as HTML
+  Rendered posts/_form.html.erb (18.3ms)
+  [1m[35mPost Load (0.5ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."id" DESC
+  [1m[36mFirm Load (0.5ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mFirm Load (0.1ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (55.9ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 366ms (Views: 349.0ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/firms-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/posts-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/scaffolds-de5258c8c58d40d8f6fbf1dfd84e093f.css?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/pages-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/bootstrap/affix-d40f971ee2f767faaf6d6af09b6891b5.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/bootstrap/alert-f76ec816bdcc68a2282059928ef1e52d.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/application-bc32582f02b375fc844f094fad120eff.css?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/bootstrap/button-7404970dda5275bf4aa732d8ef1db223.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/bootstrap/carousel-c2724c63c7e679aa20278f2f022560cb.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/bootstrap/collapse-4e4d6ff4fc17afac1d72bdb87dcf9e03.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-58cd9071a88158a9a95dda2320da8a92.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/bootstrap/tab-7d45589786306b417d1664184ca8fbf8.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/bootstrap/transition-79362283457bd064d3b7ff06acb0f011.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-f9ba5cb4717a71f39303d90f29813c97.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/bootstrap/modal-98b3faca355a223ded5349bc93bdd4a7.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-ad8aa40c8d62097d02080d81c3d49762.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/bootstrap/popover-1fad9cb69620161b2a0c5c6ea67ae644.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-81d188b7e8ff849b2ba0fb3c92f98b15.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/firms-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/pages-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/posts-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/assets/application-55b8fb2b77bc26562f09edc48bdb8091.js?body=1" for ::1 at 2015-01-12 00:39:01 +0000
+
+
+Started GET "/" for ::1 at 2015-01-12 00:39:02 +0000
+Processing by PostsController#index as HTML
+  Rendered posts/_form.html.erb (0.9ms)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."id" DESC
+  [1m[36mFirm Load (0.1ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mFirm Load (0.1ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.1ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (10.6ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 151ms (Views: 150.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/firms-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:39:02 +0000
+
+
+Started GET "/assets/application-bc32582f02b375fc844f094fad120eff.css?body=1" for ::1 at 2015-01-12 00:39:02 +0000
+
+
+Started GET "/assets/pages-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:39:02 +0000
+
+
+Started GET "/assets/posts-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:39:02 +0000
+
+
+Started GET "/assets/scaffolds-de5258c8c58d40d8f6fbf1dfd84e093f.css?body=1" for ::1 at 2015-01-12 00:39:02 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-12 00:39:02 +0000
+
+
+Started GET "/assets/bootstrap/affix-d40f971ee2f767faaf6d6af09b6891b5.js?body=1" for ::1 at 2015-01-12 00:39:02 +0000
+
+
+Started GET "/assets/bootstrap/alert-f76ec816bdcc68a2282059928ef1e52d.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/bootstrap/button-7404970dda5275bf4aa732d8ef1db223.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/bootstrap/carousel-c2724c63c7e679aa20278f2f022560cb.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/bootstrap/collapse-4e4d6ff4fc17afac1d72bdb87dcf9e03.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-58cd9071a88158a9a95dda2320da8a92.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/bootstrap/tab-7d45589786306b417d1664184ca8fbf8.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/bootstrap/transition-79362283457bd064d3b7ff06acb0f011.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-f9ba5cb4717a71f39303d90f29813c97.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/bootstrap/modal-98b3faca355a223ded5349bc93bdd4a7.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-ad8aa40c8d62097d02080d81c3d49762.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/bootstrap/popover-1fad9cb69620161b2a0c5c6ea67ae644.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-81d188b7e8ff849b2ba0fb3c92f98b15.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/firms-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/pages-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/posts-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/assets/application-55b8fb2b77bc26562f09edc48bdb8091.js?body=1" for ::1 at 2015-01-12 00:39:03 +0000
+
+
+Started GET "/" for ::1 at 2015-01-12 00:39:14 +0000
+Processing by PostsController#index as HTML
+  Rendered posts/_form.html.erb (1.2ms)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."id" DESC
+  [1m[36mFirm Load (0.3ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mFirm Load (0.2ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (12.6ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 147ms (Views: 145.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/pages-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/firms-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/scaffolds-de5258c8c58d40d8f6fbf1dfd84e093f.css?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/posts-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/application-bc32582f02b375fc844f094fad120eff.css?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/bootstrap/alert-f76ec816bdcc68a2282059928ef1e52d.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/bootstrap/affix-d40f971ee2f767faaf6d6af09b6891b5.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/bootstrap/button-7404970dda5275bf4aa732d8ef1db223.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/bootstrap/carousel-c2724c63c7e679aa20278f2f022560cb.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/bootstrap/collapse-4e4d6ff4fc17afac1d72bdb87dcf9e03.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-58cd9071a88158a9a95dda2320da8a92.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/bootstrap/tab-7d45589786306b417d1664184ca8fbf8.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/bootstrap/transition-79362283457bd064d3b7ff06acb0f011.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-f9ba5cb4717a71f39303d90f29813c97.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/bootstrap/modal-98b3faca355a223ded5349bc93bdd4a7.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-ad8aa40c8d62097d02080d81c3d49762.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/bootstrap/popover-1fad9cb69620161b2a0c5c6ea67ae644.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-81d188b7e8ff849b2ba0fb3c92f98b15.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/firms-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/pages-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/posts-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/assets/application-55b8fb2b77bc26562f09edc48bdb8091.js?body=1" for ::1 at 2015-01-12 00:39:14 +0000
+
+
+Started GET "/" for ::1 at 2015-01-12 00:39:31 +0000
+Processing by PostsController#index as HTML
+  Rendered posts/_form.html.erb (1.1ms)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."id" DESC
+  [1m[36mFirm Load (0.1ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mFirm Load (0.1ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (12.5ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 199ms (Views: 197.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/firms-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/posts-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/pages-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/scaffolds-de5258c8c58d40d8f6fbf1dfd84e093f.css?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/application-bc32582f02b375fc844f094fad120eff.css?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/bootstrap/affix-d40f971ee2f767faaf6d6af09b6891b5.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/bootstrap/alert-f76ec816bdcc68a2282059928ef1e52d.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/bootstrap/button-7404970dda5275bf4aa732d8ef1db223.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/bootstrap/carousel-c2724c63c7e679aa20278f2f022560cb.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/bootstrap/collapse-4e4d6ff4fc17afac1d72bdb87dcf9e03.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-58cd9071a88158a9a95dda2320da8a92.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/bootstrap/tab-7d45589786306b417d1664184ca8fbf8.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/bootstrap/transition-79362283457bd064d3b7ff06acb0f011.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-f9ba5cb4717a71f39303d90f29813c97.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/bootstrap/modal-98b3faca355a223ded5349bc93bdd4a7.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-ad8aa40c8d62097d02080d81c3d49762.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/bootstrap/popover-1fad9cb69620161b2a0c5c6ea67ae644.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-81d188b7e8ff849b2ba0fb3c92f98b15.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/firms-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/pages-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/posts-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/assets/application-55b8fb2b77bc26562f09edc48bdb8091.js?body=1" for ::1 at 2015-01-12 00:39:31 +0000
+
+
+Started GET "/" for ::1 at 2015-01-12 00:40:23 +0000
+Processing by PostsController#index as HTML
+  Rendered posts/_form.html.erb (1.4ms)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."id" DESC
+  [1m[36mFirm Load (0.1ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mFirm Load (0.1ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (7.7ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 145ms (Views: 144.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/assets/firms-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/posts-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/pages-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/bootstrap/affix-d40f971ee2f767faaf6d6af09b6891b5.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/scaffolds-de5258c8c58d40d8f6fbf1dfd84e093f.css?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/application-bc32582f02b375fc844f094fad120eff.css?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/bootstrap/alert-f76ec816bdcc68a2282059928ef1e52d.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/bootstrap/button-7404970dda5275bf4aa732d8ef1db223.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/bootstrap/carousel-c2724c63c7e679aa20278f2f022560cb.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/bootstrap/collapse-4e4d6ff4fc17afac1d72bdb87dcf9e03.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-58cd9071a88158a9a95dda2320da8a92.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/bootstrap/tab-7d45589786306b417d1664184ca8fbf8.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/bootstrap/transition-79362283457bd064d3b7ff06acb0f011.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-f9ba5cb4717a71f39303d90f29813c97.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/bootstrap/modal-98b3faca355a223ded5349bc93bdd4a7.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-ad8aa40c8d62097d02080d81c3d49762.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/bootstrap/popover-1fad9cb69620161b2a0c5c6ea67ae644.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-81d188b7e8ff849b2ba0fb3c92f98b15.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/firms-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/pages-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/posts-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/assets/application-55b8fb2b77bc26562f09edc48bdb8091.js?body=1" for ::1 at 2015-01-12 00:40:23 +0000
+
+
+Started GET "/" for ::1 at 2015-01-12 00:40:24 +0000
+Processing by PostsController#index as HTML
+  Rendered posts/_form.html.erb (1.2ms)
+  [1m[35mPost Load (0.1ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."id" DESC
+  [1m[36mFirm Load (0.1ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mFirm Load (0.1ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (9.8ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 130ms (Views: 128.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/firms-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/posts-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/scaffolds-de5258c8c58d40d8f6fbf1dfd84e093f.css?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/pages-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/application-bc32582f02b375fc844f094fad120eff.css?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/bootstrap/affix-d40f971ee2f767faaf6d6af09b6891b5.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/bootstrap/alert-f76ec816bdcc68a2282059928ef1e52d.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/bootstrap/carousel-c2724c63c7e679aa20278f2f022560cb.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/bootstrap/button-7404970dda5275bf4aa732d8ef1db223.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/bootstrap/collapse-4e4d6ff4fc17afac1d72bdb87dcf9e03.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-58cd9071a88158a9a95dda2320da8a92.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/bootstrap/tab-7d45589786306b417d1664184ca8fbf8.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/bootstrap/transition-79362283457bd064d3b7ff06acb0f011.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-f9ba5cb4717a71f39303d90f29813c97.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/bootstrap/modal-98b3faca355a223ded5349bc93bdd4a7.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-ad8aa40c8d62097d02080d81c3d49762.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/bootstrap/popover-1fad9cb69620161b2a0c5c6ea67ae644.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-81d188b7e8ff849b2ba0fb3c92f98b15.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/firms-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/pages-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/posts-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started GET "/assets/application-55b8fb2b77bc26562f09edc48bdb8091.js?body=1" for ::1 at 2015-01-12 00:40:24 +0000
+
+
+Started POST "/posts" for ::1 at 2015-01-12 00:40:29 +0000
+Processing by PostsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HIhH/fsIxKZ27w2NibZV4n+FM0kJyp2RZsV74OOhjx7aHFTjEKnwmRmdBsZas1VZjiy/Md/prPE/3ejse76Dyg==", "post"=>{"content"=>"Test", "firm_id"=>"1"}, "commit"=>"Submit"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "posts" ("content", "firm_id", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["content", "Test"], ["firm_id", 1], ["created_at", "2015-01-12 00:40:29.525820"], ["updated_at", "2015-01-12 00:40:29.525820"]]
+  [1m[35m (0.6ms)[0m  commit transaction
+Redirected to http://localhost:3000/posts/16
+Completed 302 Found in 6ms (ActiveRecord: 1.3ms)
+
+
+Started GET "/posts/16" for ::1 at 2015-01-12 00:40:29 +0000
+Processing by PostsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mPost Load (0.4ms)[0m  [1mSELECT  "posts".* FROM "posts" WHERE "posts"."id" = ? LIMIT 1[0m  [["id", 16]]
+  Rendered posts/show.html.erb within layouts/application (0.8ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 136ms (Views: 125.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/firms-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/pages-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/posts-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/application-bc32582f02b375fc844f094fad120eff.css?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/scaffolds-de5258c8c58d40d8f6fbf1dfd84e093f.css?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/bootstrap/affix-d40f971ee2f767faaf6d6af09b6891b5.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/bootstrap/alert-f76ec816bdcc68a2282059928ef1e52d.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/bootstrap/button-7404970dda5275bf4aa732d8ef1db223.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/bootstrap/carousel-c2724c63c7e679aa20278f2f022560cb.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/bootstrap/collapse-4e4d6ff4fc17afac1d72bdb87dcf9e03.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-58cd9071a88158a9a95dda2320da8a92.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/bootstrap/tab-7d45589786306b417d1664184ca8fbf8.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/bootstrap/transition-79362283457bd064d3b7ff06acb0f011.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-f9ba5cb4717a71f39303d90f29813c97.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/bootstrap/modal-98b3faca355a223ded5349bc93bdd4a7.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-ad8aa40c8d62097d02080d81c3d49762.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/bootstrap/popover-1fad9cb69620161b2a0c5c6ea67ae644.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-81d188b7e8ff849b2ba0fb3c92f98b15.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/firms-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/pages-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/posts-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/assets/application-55b8fb2b77bc26562f09edc48bdb8091.js?body=1" for ::1 at 2015-01-12 00:40:29 +0000
+
+
+Started GET "/posts" for ::1 at 2015-01-12 00:40:31 +0000
+Processing by PostsController#index as HTML
+  Rendered posts/_form.html.erb (4.8ms)
+  [1m[35mPost Load (0.2ms)[0m  SELECT "posts".* FROM "posts"  ORDER BY "posts"."id" DESC
+  [1m[36mFirm Load (0.1ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mFirm Load (0.1ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (19.3ms)
+  Rendered layouts/_header.html.erb (0.3ms)
+Completed 200 OK in 180ms (Views: 179.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/posts" for ::1 at 2015-01-12 00:41:15 +0000
+Processing by PostsController#index as HTML
+  Rendered posts/_form.html.erb (1.7ms)
+  [1m[36mPost Load (0.2ms)[0m  [1mSELECT "posts".* FROM "posts"  ORDER BY "posts"."id" DESC[0m
+  [1m[35mFirm Load (0.1ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mFirm Load (0.2ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 2]]
+  [1m[35mCACHE (0.0ms)[0m  SELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1  [["id", 2]]
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT  "firms".* FROM "firms" WHERE "firms"."id" = ? LIMIT 1[0m  [["id", 1]]
+  Rendered posts/index.html.erb within layouts/application (15.3ms)
+  Rendered layouts/_header.html.erb (0.0ms)
+Completed 200 OK in 160ms (Views: 159.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/firms-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/pages-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/posts-069e88c06b889877799890854d7f4c40.css?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/application-bc32582f02b375fc844f094fad120eff.css?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/scaffolds-de5258c8c58d40d8f6fbf1dfd84e093f.css?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/bootstrap/affix-d40f971ee2f767faaf6d6af09b6891b5.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/jquery-eb3e278249152b5b5d5170b73d9dbf52.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/bootstrap/alert-f76ec816bdcc68a2282059928ef1e52d.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/bootstrap/button-7404970dda5275bf4aa732d8ef1db223.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/bootstrap/carousel-c2724c63c7e679aa20278f2f022560cb.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/bootstrap/collapse-4e4d6ff4fc17afac1d72bdb87dcf9e03.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/bootstrap/tab-7d45589786306b417d1664184ca8fbf8.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/bootstrap/transition-79362283457bd064d3b7ff06acb0f011.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/bootstrap/dropdown-58cd9071a88158a9a95dda2320da8a92.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy-f9ba5cb4717a71f39303d90f29813c97.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/bootstrap/modal-98b3faca355a223ded5349bc93bdd4a7.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/bootstrap/tooltip-ad8aa40c8d62097d02080d81c3d49762.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/bootstrap/popover-1fad9cb69620161b2a0c5c6ea67ae644.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/bootstrap-sprockets-81d188b7e8ff849b2ba0fb3c92f98b15.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/jquery_ujs-0b8f09cf5aec4ba1be1abd9f915c77e2.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/turbolinks-924184401b7d116eadaaefc96895fa84.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/firms-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/pages-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/posts-8f6eecd1178ef85964369ec66d33c4f1.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
+
+
+Started GET "/assets/application-55b8fb2b77bc26562f09edc48bdb8091.js?body=1" for ::1 at 2015-01-12 00:41:15 +0000
